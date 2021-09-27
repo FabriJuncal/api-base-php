@@ -1,0 +1,15 @@
+24 09 2021 17:09:28 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 17:09:29 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 17:09:31 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 17:09:07 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 17:09:20 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 17:09:42 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 17:09:00 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 17:09:36 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 17:09:52 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 17:09:03 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 17:09:53 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 18:09:04 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 18:09:19 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 18:09:33 ENTIDAD:presence ----- Funcionalidad: insertar_call
+24 09 2021 18:09:18 ENTIDAD:presence ----- Funcionalidad: insertar_call
