@@ -14,7 +14,7 @@ include_once "funciones/lista_respuestas.cls.php";
 
 
 
-class MicamAPI //extends cls_datos_mssql
+class API //extends cls_datos_mssql
 {
     
     public function API(){
@@ -40,8 +40,7 @@ class MicamAPI //extends cls_datos_mssql
 	
 		
 		//LOG
-		
-		$log = 'log_MicamAPI.txt';
+		$log = 'log_API.txt';
 		$texto_log = "ENTIDAD:".$entidad." ----- Funcionalidad: ".$method."\r\n";
 		if($archivo = fopen($log, "a"))
 		{
@@ -52,17 +51,17 @@ class MicamAPI //extends cls_datos_mssql
 		
 	
 		
-		
-		switch ($entidad) 
-		{
+// ==================================================================================================================================================
+		// AGREGAR LOS METODOS QUE EJECUTARÁ LA API CON EL VERBO HTTP CORRESPONDIENTE
+
+		switch ($entidad){
 			
 
-			case 'presence':
-				if ($verbo == 'POST')
-				{
+			case 'api_post':
+				if ($verbo == 'POST'){
 					
-					include_once "POST/presence_metodos.cls.php";
-					$objpres = new presence_metodos();
+					include_once "POST/post_metodos.cls.php";
+					$objpres = new post_nombre_clase();
 
 					if (method_exists($objpres,$method))
 					{	
@@ -72,7 +71,21 @@ class MicamAPI //extends cls_datos_mssql
 					{	
 						$metodo_inexistente = 1;
 					}
-				}			
+				}else if ($verbo == 'GET'){
+
+					include_once "GET/get_metodos.cls.php";
+					$objpres = new get_nombre_clase();
+
+					if (method_exists($objpres,$method))
+					{	
+						call_user_func(array($objpres, $method));
+					}
+					else
+					{	
+						$metodo_inexistente = 1;
+					}
+
+				}	
 				
 				break;
 
@@ -83,7 +96,7 @@ class MicamAPI //extends cls_datos_mssql
 			
 				break;
 		}
-		
+// ==================================================================================================================================================		
 		if($metodo_inexistente == 1)
 		{
 			//** Respondemos error 

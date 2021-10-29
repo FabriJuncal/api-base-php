@@ -18,8 +18,8 @@
 
 	}
 	
-    require_once "MicamAPI.php";    
-    $MicamAPI = new MicamAPI();
-    $MicamAPI->API();
+    require_once "API.php";    
+    $API = new API();
+    $API->API();
     
 ?>
